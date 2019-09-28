@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Form"
+        android:background="#53deed"
+        android:textAlignment="center"
+        android:textSize="25sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=" Name: "
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/text_name"
+            android:inputType="textShortMessage" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Gender"
+            android:textSize="20sp"
+            />
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@+id/gender"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:checked="false"
+                android:orientation="horizontal"
+                android:text="Male"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/fm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="Female"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/text_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=" Email: "
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-3dp"
+            android:layout_toRightOf="@+id/text_email"
+            android:inputType="textEmailAddress" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/text_salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=" Salary: "
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/edit_salary"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-2dp"
+            android:layout_marginLeft="60dp"
+            android:layout_toEndOf="@+id/text_salary"
+            android:inputType="textEmailAddress" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:background="#8BC34A"
+            android:onClick="showDetail"
+            android:text="ADD"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/btnAdd"
+            android:background="#E91E63"
+            android:text="CANCEL"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>
